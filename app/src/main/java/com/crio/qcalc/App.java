@@ -11,21 +11,35 @@ public class App {
     }
 
 
-   
+    
+ public static void main(String[] args) {
 
-   public static void main(String[] args) {
+    System.out.println(new App().getGreeting());
 
-    System.out.println("Starting QCalc..");
+    ScientificCalculator calc = new ScientificCalculator();
 
-    StandardCalculator calc = new StandardCalculator();
+    int result= calc.modulo(5, 2);
 
-    calc.multiply(1, 2);
-    calc.add(1, 2);
-    calc.subtract(1, 2);
-    calc.divide(1, 2);
-    System.out.println(calc.getResult());
+    System.out.println("modulo = " + result);
 
 }
+
+
+   
+
+//    public static void main(String[] args) {
+
+//     System.out.println("Starting QCalc..");
+
+//     StandardCalculator calc = new StandardCalculator();
+
+//     calc.multiply(1, 2);
+//     calc.add(1, 2);
+//     calc.subtract(1, 2);
+//     calc.divide(1, 2);
+//     System.out.println(calc.getResult());
+
+//}
 
 
 }
